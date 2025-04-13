@@ -5,15 +5,14 @@
 # Import datetime
 from datetime import datetime
 
+# Defining 
 dt = datetime.now()
 
 wd = dt.weekday()
 
-if wd < 5:
+if wd < 4:
     print ("Yes, unfortunately today is a week day!")
+elif wd == 4:
+    print ("The weekend is near; Happy Friday!")
 else:
-    print ("yay, it's the weekend!")
-
-
-
-# Reference: Weekday function used from https://pynative.com/python-get-the-day-of-week/
+    print ("Yay, it's the weekend!! Enjoy it!")
